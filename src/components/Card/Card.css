@@ -1,6 +1,6 @@
 .Card {
   text-align: center;
-  background-color: rgba(100, 148, 237, 0.94);
+  background-color: rgba(100, 148, 237, 1);
   border-radius: 5px;
   padding: 2vh;
   color: white;
@@ -12,8 +12,8 @@
 .poke-image {
   height: 100px;
   width: auto;
-  background-color: gold;
-  border: 4px orangered solid;
+  background-color: black;
+  /* border: 4px orangered solid; */
   border-radius: 50%;
   padding: 2vh;
 }

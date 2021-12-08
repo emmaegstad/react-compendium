@@ -9,7 +9,7 @@
 .search-input {
   border: none;
   /* background-color: gold; */
-  border: 3px black solid;
+  border: 2px orangered solid;
   border-radius: 5px;
   height: 2vh;
 }
