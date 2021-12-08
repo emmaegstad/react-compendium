@@ -1,5 +1,18 @@
 .Card {
   text-align: center;
-  border: 1px solid black;
+  background-color: cornflowerblue;
+  border-radius: 5px;
+  padding: 2vh;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.poke-image {
+  height: 100px;
+  width: auto;
+  background-color: gold;
+  border: 4px orangered solid;
+  border-radius: 50%;
   padding: 2vh;
 }

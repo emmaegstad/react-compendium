@@ -21,6 +21,8 @@ function App() {
     }
   }, [loading, query]);
 
+  console.log(pokemon);
+
   return (
     <div className="App">
       <Header />
