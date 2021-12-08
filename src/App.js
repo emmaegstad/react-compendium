@@ -26,8 +26,13 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <Search />
-      <Main pokemon={pokemon} />
+      {loading && <span className="loader"></span>}
+      {!loading && (
+        <>
+          <Search />
+          <Main pokemon={pokemon} />
+        </>
+      )}
     </div>
   );
 }
