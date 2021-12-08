@@ -4,7 +4,7 @@ import './Header.css';
 export default function Header() {
   return (
     <div className="Header">
-      <h1>My Poppin Pokédex</h1>
+      <h1>My Pokédex</h1>
     </div>
   );
 }

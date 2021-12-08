@@ -2,15 +2,16 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2vh 0 6vh 0;
+  border-radius: 5px;
+  margin-bottom: 4vh;
 }
 
 .search-input {
   border: none;
   /* background-color: gold; */
-  border: 3px orangered solid;
+  border: 3px black solid;
   border-radius: 5px;
-  height: 3.5vh;
+  height: 2vh;
 }
 
 .search-submit {
@@ -19,7 +20,7 @@
 }
 
 .search-submit img {
-  height: 4vh;
+  height: 3vh;
 }
 
 .search-submit:hover {
