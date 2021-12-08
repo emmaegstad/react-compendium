@@ -27,7 +27,7 @@ function App() {
       {loading && <span className="loader"></span>}
       {!loading && (
         <>
-          <Search query={query} setQuery={setQuery} />
+          <Search query={query} setQuery={setQuery} setLoading={setLoading} />
           <Main pokemon={pokemon} />
         </>
       )}
