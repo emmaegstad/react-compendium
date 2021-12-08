@@ -4,7 +4,6 @@ import Header from './components/Header/Header';
 import Search from './components/Search/Search';
 import Main from './components/Main/Main';
 import { getPokemon } from './services/pokemon';
-import Background from './background.png';
 
 function App() {
   const [pokemon, setPokemon] = useState([]);
