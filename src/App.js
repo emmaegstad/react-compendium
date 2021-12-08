@@ -21,15 +21,13 @@ function App() {
     }
   }, [loading, query]);
 
-  console.log(pokemon);
-
   return (
     <div className="App">
       <Header />
       {loading && <span className="loader"></span>}
       {!loading && (
         <>
-          <Search />
+          <Search query={query} setQuery={setQuery} />
           <Main pokemon={pokemon} />
         </>
       )}

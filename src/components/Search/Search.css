@@ -1,3 +1,31 @@
 .Search {
-  padding-bottom: 4vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2vh 0 6vh 0;
+}
+
+.search-input {
+  border: none;
+  /* background-color: gold; */
+  border: 3px orangered solid;
+  border-radius: 5px;
+  height: 3.5vh;
+}
+
+.search-submit {
+  border: none;
+  background: none;
+}
+
+.search-submit img {
+  height: 4vh;
+}
+
+.search-submit:hover {
+  transform: scale(1.1);
+}
+
+.search-submit:active {
+  filter: drop-shadow(1px 1px 2px black);
 }
