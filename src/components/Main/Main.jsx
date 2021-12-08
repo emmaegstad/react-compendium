@@ -6,7 +6,14 @@ export default function Main({ pokemon }) {
   return (
     <div className="Main">
       {pokemon.map((poke) => (
-        <Card key={poke.id} name={poke.pokemon} image={poke.url_image} />
+        <Card
+          key={poke.id}
+          name={poke.pokemon}
+          image={poke.url_image}
+          hp={poke.hp}
+          defense={poke.defense}
+          type1={poke.type_1}
+        />
       ))}
     </div>
   );

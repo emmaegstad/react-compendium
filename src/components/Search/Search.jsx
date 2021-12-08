@@ -4,7 +4,8 @@ import './Search.css';
 export default function Search() {
   return (
     <div className="Search">
-      <h2>This is a search.</h2>
+      <input type="text" />
+      <button>Submit</button>
     </div>
   );
 }
