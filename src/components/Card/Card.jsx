@@ -2,5 +2,9 @@ import React from 'react';
 import './Card.css';
 
 export default function Card() {
-  return <p>This is a card.</p>;
+  return (
+    <div className="Card">
+      <p>This is a card.</p>
+    </div>
+  );
 }

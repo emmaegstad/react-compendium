@@ -1,0 +1,6 @@
+.Main {
+  display: grid;
+  grid-gap: 4vw;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+}
