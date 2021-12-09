@@ -1,12 +1,18 @@
 import React from 'react';
 import './Header.css';
 import HeaderImg from '../../HeaderImg.png';
+import 'animate.css';
 
 export default function Header() {
   return (
     <div className="Header">
-      {/* <h1>My Pokédex</h1> */}
-      <img className="header-img" src={HeaderImg} alt="pokedex logo" />
+      <a href=".">
+        <img
+          className="header-img animate__animated animate__bounceInDown"
+          src={HeaderImg}
+          alt="pokedex logo"
+        />
+      </a>
     </div>
   );
 }
