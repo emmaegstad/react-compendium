@@ -3,15 +3,15 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  margin-bottom: 4vh;
+  margin-bottom: 6vh;
 }
 
 .search-input {
   border: none;
   /* background-color: gold; */
-  border: 1px orangered solid;
+  border: 2px #ff0000 solid;
   border-radius: 5px;
-  height: 2vh;
+  height: 2.5vh;
 }
 
 .search-submit {

@@ -8,9 +8,9 @@ font-family: 'Readex Pro', sans-serif; */
   flex-direction: column;
   align-items: center;
   font-family: 'Readex Pro', sans-serif;
-  /* background-color: rgba(100, 148, 237, 0.911); */
-  background-color: rgba(0, 0, 0, 0.9);
-  height: 100vh;
+  /* background-color: rgb(62, 123, 238); */
+  background-color: white;
+  height: 100%;
 }
 
 .loader {
