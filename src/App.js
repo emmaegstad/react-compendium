@@ -12,11 +12,12 @@ function App() {
   const [loading, setLoading] = useState(true);
   const [query, setQuery] = useState('');
   const [order, setOrder] = useState('asc');
+  const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
     let timer;
     const fetchData = async () => {
-      const data = await getPokemon(query, order, selectedType);
+      const data = await getPokemon(query, order, selectedType, currentPage);
       setPokemon(data.results);
       timer = setTimeout(() => {
         setLoading(false);
@@ -28,7 +29,7 @@ function App() {
     return () => {
       clearInterval(timer);
     };
-  }, [loading, query, selectedType, order]);
+  }, [loading, query, selectedType, order, currentPage]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -41,7 +42,11 @@ function App() {
   return (
     <div className="App">
       <Header />
-      {loading && <span className="loader"></span>}
+      {loading && (
+        <div className="loading-container animate__animated animate__pulse">
+          <span className="loader">Loading...</span>
+        </div>
+      )}
       {!loading && (
         <>
           <Search
@@ -54,7 +59,13 @@ function App() {
             order={order}
             setOrder={setOrder}
           />
-          <Main pokemon={pokemon} />
+          <Main
+            pokemon={pokemon}
+            currentPage={currentPage}
+            setCurrentPage={setCurrentPage}
+            loading={loading}
+            setLoading={setLoading}
+          />
         </>
       )}
     </div>

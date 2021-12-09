@@ -9,3 +9,21 @@
   border: 6px solid #ff0000;
   border-radius: 10px;
 }
+
+.next {
+  height: 6vh;
+  width: 14vh;
+  border-radius: 5px;
+  border: none;
+  background-color: #3b4ccaf1;
+  color: #ffde00;
+  align-self: center;
+  justify-self: center;
+  font-size: 1.7vh;
+  font-family: 'Press Start 2P', cursive;
+  text-shadow: 0 3px 3px #000;
+}
+
+.next:hover {
+  transform: scale(1.1);
+}

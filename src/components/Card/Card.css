@@ -13,8 +13,6 @@
 .poke-image {
   height: 15vh;
   width: auto;
-  /* background-color: rgb(255, 255, 255);
-  border: 2px black solid; */
   border-radius: 50%;
   padding: 2vh;
   filter: drop-shadow(1.3vh 1.3vh 1.3vh black);
