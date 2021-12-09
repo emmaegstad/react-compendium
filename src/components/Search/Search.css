@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 5px;
-  margin-bottom: 6vh;
+  margin-bottom: 4vh;
 }
 
 .search-input {
@@ -11,6 +11,7 @@
   border: 4px #ff0000 solid;
   border-radius: 5px;
   height: 2.5vh;
+  background-color: transparent;
 }
 
 .search-submit {
