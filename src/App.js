@@ -11,14 +11,20 @@ function App() {
   const [query, setQuery] = useState('');
 
   useEffect(() => {
+    let timer;
     const fetchData = async () => {
       const data = await getPokemon(query);
       setPokemon(data.results);
-      setLoading(false);
+      timer = setTimeout(() => {
+        setLoading(false);
+      }, 1000);
     };
     if (loading) {
       fetchData();
     }
+    return () => {
+      clearInterval(timer);
+    };
   }, [loading, query]);
 
   return (
