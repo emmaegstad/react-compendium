@@ -3,7 +3,7 @@ import './Main.css';
 import Card from '../Card/Card';
 import Background from '../../background.png';
 
-export default function Main({ pokemon, loading, setLoading, currentPage, setCurrentPage }) {
+export default function Main({ pokemon, setLoading, setCurrentPage }) {
   const handleNextPage = () => {
     setCurrentPage((prevState) => ++prevState);
     setLoading(true);
