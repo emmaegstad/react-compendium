@@ -1,29 +1,31 @@
 .Card {
   text-align: center;
-  background-color: rgba(100, 148, 237, 1);
+  background-color: #3b4ccaf1;
+  /* background-color: rgba(0, 0, 0, 0.9); */
   border-radius: 5px;
   padding: 2vh;
   color: white;
   text-transform: capitalize;
   font-weight: bold;
-  border: 4px solid black;
+  /* border: 4px solid #ffde00; */
 }
 
 .poke-image {
-  height: 100px;
+  height: 15vh;
   width: auto;
-  background-color: black;
-  border: 2px orangered solid;
+  /* background-color: rgb(255, 255, 255);
+  border: 2px black solid; */
   border-radius: 50%;
   padding: 2vh;
+  filter: drop-shadow(1.3vh 1.3vh 1.3vh black);
 }
 
 .name {
-  font-size: 1.5vh;
+  font-size: 1.6vh;
   text-transform: uppercase;
   font-family: 'Press Start 2P', cursive;
-  color: white;
-  filter: drop-shadow(1px 1px 1px black);
+  color: #ffde00;
+  filter: drop-shadow(2px 2px 2px rgb(0, 0, 0));
 }
 
 .details {
