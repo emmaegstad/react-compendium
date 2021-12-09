@@ -1,5 +1,5 @@
 import { render, screen } from '@testing-library/react';
-import Search from './search';
+import Search from './Search';
 
 test('renders the Search component', () => {
   const container = render(
