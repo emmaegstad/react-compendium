@@ -8,6 +8,8 @@ export default function Search({
   types,
   selectedType,
   setSelectedType,
+  order,
+  setOrder,
 }) {
   return (
     <div className="Search">
@@ -33,6 +35,10 @@ export default function Search({
             </option>
           );
         })}
+      </select>
+      <select className="search-select" value={order} onChange={(e) => setOrder(e.target.value)}>
+        <option value="asc">Ascending</option>
+        <option value="desc">Descending</option>
       </select>
       <button className="search-submit" onClick={() => setLoading(true)}>
         <img src={process.env.PUBLIC_URL + '/assets/pokeball.png'} />

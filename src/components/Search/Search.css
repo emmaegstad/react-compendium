@@ -11,14 +11,14 @@
   border: 4px #ff0000 solid;
   border-radius: 5px;
   padding: 1.1vh;
-  background-color: transparent;
+  background-color: white;
 }
 
 .search-select {
   border: 4px #ff0000 solid;
   border-radius: 5px;
   padding: 1vh;
-  background-color: transparent;
+  background-color: white;
 }
 
 .search-submit {
