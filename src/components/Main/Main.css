@@ -6,6 +6,6 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   padding: 6vh;
-  border: 8px solid #ff0000;
+  border: 6px solid #ff0000;
   border-radius: 10px;
 }

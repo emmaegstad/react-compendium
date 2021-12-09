@@ -1,7 +1,14 @@
 import React from 'react';
 import './Search.css';
 
-export default function Search({ query, setQuery, setLoading }) {
+export default function Search({
+  query,
+  setQuery,
+  setLoading,
+  types,
+  selectedType,
+  setSelectedType,
+}) {
   return (
     <div className="Search">
       <input
@@ -13,6 +20,20 @@ export default function Search({ query, setQuery, setLoading }) {
           setQuery(e.target.value);
         }}
       />
+      <select
+        className="search-select"
+        value={selectedType}
+        onChange={(e) => setSelectedType(e.target.value)}
+      >
+        <option value="all">All</option>
+        {types.map((type) => {
+          return (
+            <option key={type} value={type}>
+              {type}
+            </option>
+          );
+        })}
+      </select>
       <button className="search-submit" onClick={() => setLoading(true)}>
         <img src={process.env.PUBLIC_URL + '/assets/pokeball.png'} />
       </button>

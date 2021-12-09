@@ -4,13 +4,20 @@
   align-items: center;
   border-radius: 5px;
   margin-bottom: 4vh;
+  gap: 2vh;
 }
 
 .search-input {
-  border: none;
   border: 4px #ff0000 solid;
   border-radius: 5px;
-  height: 2.5vh;
+  padding: 1.1vh;
+  background-color: transparent;
+}
+
+.search-select {
+  border: 4px #ff0000 solid;
+  border-radius: 5px;
+  padding: 1vh;
   background-color: transparent;
 }
 
@@ -20,7 +27,7 @@
 }
 
 .search-submit img {
-  height: 3vh;
+  height: 4vh;
 }
 
 .search-submit:hover {
