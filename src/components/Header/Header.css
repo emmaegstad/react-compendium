@@ -9,3 +9,7 @@
   color: #ff0000;
   filter: drop-shadow(2px 2px 1px black);
 }
+
+.header-img {
+  width: 45vh;
+}
